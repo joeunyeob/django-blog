@@ -4,6 +4,7 @@ from django.conf import settings
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
 from django.db import models
+from django.urls import reverse
 
 
 def lnglat_validator(value):
@@ -35,6 +36,9 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return reverse('post_detail', args=[settings.id])
 
 
 class Comment(models.Model):
