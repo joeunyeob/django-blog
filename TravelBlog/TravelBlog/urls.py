@@ -17,6 +17,7 @@ urlpatterns = [
     url(r'^accounts/', include('accounts.urls')),
     url(r'^blog/', include('blog.urls')),
     url(r'^shop/', include('shop.urls')),
+    url(r'^dojo/', include('dojo.urls')),
 ]
 
 if settings.DEBUG:
