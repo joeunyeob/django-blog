@@ -11,8 +11,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -26,6 +26,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TravelBlog/templates/widgets" />
       <recent name="$PROJECT_DIR$/TravelBlog" />
     </key>
   </component>
@@ -79,7 +80,7 @@
       <workItem from="1566042656982" duration="14883000" />
       <workItem from="1566205909423" duration="4399000" />
       <workItem from="1566291436683" duration="14273000" />
-      <workItem from="1567325197734" duration="15091000" />
+      <workItem from="1567325197734" duration="25086000" />
     </task>
     <servers />
   </component>

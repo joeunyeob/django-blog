@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'accounts',
     'shop',
     'dojo',
+    'imagekit',
 ]
 
 MIDDLEWARE = [
@@ -140,3 +141,5 @@ from django.contrib.messages import constants
 
 MESSAGE_LEVEL = constants.DEBUG  # 지금부터 debug 레벨의 messages 를 남길 수 있음.
 MESSAGE_TAGS = {constants.ERROR: 'danger'}
+
+NAVER_CLIENT_ID = '2lteqtdbx7'

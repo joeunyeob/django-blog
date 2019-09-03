@@ -7,8 +7,8 @@
             <p>개인 블로그 연습 공간 입니다.</p>
             <p>
                 <a class="btn btn-lg btn-primary" href="https://github.com/joeunyeob">
-                        Naram`s github &raquo;
-                    </a>
+                    Naram`s github &raquo;
+                </a>
             </p>
         </div>
 
@@ -16,30 +16,32 @@
             <div class="col-sm-12">
                 <div class="alert alert-info">
                     <ul>
-                    <li>http://localhost:8000/blog/ 주소로 접속해보세요.</li>
-                    <li>템플릿 경로를 blog/templates/post_list.html 경로가 아닌
-                    blog/ templates/blog/post_list.html 경로를 쓰는 지에 대한 이유는,
-                    후에 Template Loader에서 설명합니다.</li>
+                        <li>http://localhost:8000/blog/ 주소로 접속해보세요.</li>
+                        <li>템플릿 경로를 blog/templates/post_list.html 경로가 아닌
+                            blog/ templates/blog/post_list.html 경로를 쓰는 지에 대한 이유는,
+                            후에 Template Loader에서 설명합니다.
+                        </li>
                     </ul>
                 </div>
-             <a href="{% url "post_new" %}" class="btn btn-primary pull-right">New Post</a>
+                <a href="{% url "post_new" %}" class="btn btn-primary pull-right">New Post</a>
 
                 <p>
-                    <form action="" method="get">
-                        <input type="text" name="q" value="{{ q }}" />
-                        <input type="submit" value="검색" class="btn btn-primary" />
-                    </form>
+                <form action="" method="get">
+                    <input type="text" name="q" value="{{ q }}"/>
+                    <input type="submit" value="검색" class="btn btn-primary"/>
+                </form>
                 </p>
-                <table class="table table-hover table-bordered">
-                    <thead>
+                <div id="container">
+                    <table class="table table-hover table-bordered">
+                        <thead>
                         <tr>
                             <th>id</th>
                             <th>title</th>
                             <th>author</th>
                             <th>updated_at</th>
                         </tr>
-                    </thead>
-                    <tbody>
+                        </thead>
+                        <tbody>
                         {% for post in post_list %}
                             <tr>
                                 <td>{{ post.id }}</td>
@@ -48,8 +50,9 @@
                                 <td><small>at {{ post.updated_at }}</small></td>
                             </tr>
                         {% endfor %}
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
