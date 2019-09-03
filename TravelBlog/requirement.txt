@@ -2,3 +2,6 @@ django==2.2.4
 django-debug-toolbar
 django-bootstrap3
 pillow
+pilkit
+requests
+django-imagekit
