@@ -1,6 +1,7 @@
 import os
 from django.conf import settings
 from django.http import JsonResponse, HttpResponse
+from django.views.generic import DetailView
 from django.shortcuts import redirect, render, get_object_or_404
 from .forms import PostForm
 from .models import Post
@@ -19,6 +20,9 @@ def post_new(request):
     return render(request, 'dojo/post_form.html', {
         'form': form,
     })
+
+
+post_detail = DetailView.as_view(model=Post)
 
 
 def post_edit(request):
