@@ -143,3 +143,11 @@ MESSAGE_LEVEL = constants.DEBUG  # 지금부터 debug 레벨의 messages 를 남
 MESSAGE_TAGS = {constants.ERROR: 'danger'}
 
 NAVER_CLIENT_ID = '2lteqtdbx7'
+
+LOGIN_URL = '/accounts/login'
+
+LOGIN_REDIRECT_URL = 'accounts/profile'
+
+LOGOUT_REDIRECT_URL = None
+
+AUTH_USER_MODEL = 'auth.User'
